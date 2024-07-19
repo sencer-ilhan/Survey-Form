@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+    <h1 id="title">In-Person & Online Learning Survey Form</h1>
+    <p id="description">A short survey form to understand students' views about in-person & online learning</p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+      </fieldset>
+      <fieldset>
+        <label id="email-label" for="email">Enter your email address</label>
+        <input type="email" id="email" name="email" placeholder="john@email.com" required>
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="age">Enter your age</label>
+        <input id="age" type="number" name="age" min="10" max="90" placeholder="Age">
+      </fieldset>
+      <fieldset>
+        <p class="p-questions">Which Course Delivery Method Do You Prefer ?</p>
+        <select id="dropdown" name="delivery-method">
+          <option value="">Select One</option>
+          <option value="online">Online Learning</option>
+          <option value="in-person">In-person Learning</option>
+          <option value="hybrid">Hybrid Learning</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>What is Your Current Status (Required)</legend>
+        <label for="enrolled">
+          <input type="radio" id="enrolled" name="status" value="Enrolled" checked>
+          Already Studying
+        </label>
+        <label for="graduated">
+          <input type="radio" id="graduated" name="status" value="Graduated">
+          Graduated
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="p-questions">What Is Your Favourite Course ?</p>
+        <label>
+          <input type="checkbox" value="math" name="course" >Mathematics
+        </label>
+        <label>
+          <input type="checkbox" value="chemistry" name="course">Chemistry
+        </label>
+        <label>
+          <input type="checkbox" value="biology" name="course">Biology
+        </label>
+        <label>
+          <input type="checkbox" value="art" name="course">Art
+        </label>
+        <label>
+          <input type="checkbox" value="music" name="course">Music
+        </label>
+        <label>
+          <input type="checkbox" value="pe" name="course">P.E
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">What Is The Reseason You Chose That Delivery Method ?</label>
+        <textarea id="comments" name="comments" placeholder="Leave your comment..." rows="4" cols="30"></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
